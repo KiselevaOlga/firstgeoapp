@@ -18,6 +18,8 @@ def calculate_distance(request):
     print('location longit', longit)
     location = geolocator.geocode(city)
     print("snjdn", location)
+
+    
     if form.is_valid():
         # if commit form False than it tells django to not save it yet
         instance = form.save(commit=False)
